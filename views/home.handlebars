@@ -3,18 +3,28 @@
 <br>
 <div class="jumnotron clearfix">
     <div class="row">
-    <div class="col-md-7">
-      <h1 class="display-4">The begineers gude to Python</h1>  
-      <p class="lead">
-          Welcome to this webpage. This is not a real eBook and you will not get it after paying for it!
-          this is just for test purpose. You can get the test credit card no. and cvv on the about page.
-      </p>
-      <hr class="my-3">
-      <p>To buy this eBook please click the link below</p>
-      <a class="btn btn-primary btn-lg" href="#" role="button">Buy Now!</a>
+        <div class="col-md-7">
+            <h1 class="display-4">The begineers gude to Python</h1>
+            <p class="lead">
+                Welcome to this webpage. This is not a real eBook and you will not get it after paying for it! this is just for test purpose.
+                You can get the test credit card no. and cvv on the about page.
+            </p>
+            <hr class="my-3">
+            <p>To buy this eBook please click the link below</p>
+            <form action="/checkout" method="POST">
+                <script src="https://checkout.stripe.com/checkout.js" class="stripe-button" data-key="pk_test_YMS7SFOhZh3s7tJcYqpuuU9h" data-amount="2300"
+                    data-name="The beginners guide to C++" data-description="eBook written by Siddhantk232" data-image="https://stripe.com/img/documentation/checkout/marketplace.png"
+                    data-locale="auto">
+                    </script>
+                <script>
+                    // Hide default stripe button
+                    document.getElementsByClassName('stripe-button-el')[0].style.display = 'none';
+                </script>
+                <button type="submit" class="btn btn-primary btn-lg">Purchase for $23</button>
+            </form>
+        </div>
+        <div class="col-md-5">
+            <img src="/img/product.png" alt="product_image" class="image-responsive img float-right">
+        </div>
     </div>
-    <div class="col-md-5">
-        <img src="/img/product.png" alt="product_image" class="image-responsive img float-right">
-    </div>
-</div>
 </div>
